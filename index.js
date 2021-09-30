@@ -16,10 +16,26 @@ while (j < arr.length) {
 console.log(res2);
 
 // task2
-for (let i = 0; i <= 15; i++){
+for (let i = 0; i <= 15; i++) {
     if (i % 2 === 0) {
         console.log(i + " is even");
     } else {
         console.log(i + " is odd");
     };
 };
+
+// task3
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+
+function randArray(k) {
+    let arr = [];
+    for (let i = 0; i < k; i++){
+        arr.push(getRandomInt(1, 500));
+    }; 
+    return console.log(arr);
+};
+randArray(10);
