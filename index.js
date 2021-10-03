@@ -56,3 +56,16 @@ const b = +prompt("Введіть ступінь, у яку підняти чи�
 if ((isInteger(a) === false) || (isInteger(b) === false)) {
     alert("Введіть цілі числа");
 } else raiseToDegree (a,b);
+
+// task5
+function findMin() {
+    let min = arguments[0];
+    for (let i = 1; i < arguments.length; i++) {
+        if (arguments[i] <= min) {
+            min = arguments[i];   
+        };
+    };
+    console.log(min);
+};
+
+findMin(12, 14, 4, -4, 0.2);
