@@ -70,6 +70,18 @@ function findMin() {
 
 findMin(12, 14, 4, -4, 0.2);
 
+// task6
+function findUnique(array) { 
+    let obj = {};
+    for (let i = 0; i < array.length; i++) { 
+        if (obj[array[i]]) return false;
+        obj[array[i]] = true;
+    };
+    return true;
+};
+console.log(findUnique([1, 2, 3, 3, 3]));
+console.log(findUnique([1, 2, 3, 5, 11]));
+
 // task7 
 function lastElem (arr, num) {
     if (num === undefined) return arr[arr.length - 1];
@@ -77,6 +89,17 @@ function lastElem (arr, num) {
     else return arr;
 };
 
-console.log(lastElem([3, 4, 10, -5]));
-console.log(lastElem([3, 4, 10, -5],2));
-console.log(lastElem([3, 4, 10, -5],8));
+console.log(lastElem([3, 4, 10, -5]));      // -5
+console.log(lastElem([3, 4, 10, -5],2));   // [10, -5]
+console.log(lastElem([3, 4, 10, -5],8));   // [3, 4, 10, -5]
+
+// task8
+function toUpperCase(str){
+    let arr = str.split(" ");
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    };
+    let result = arr.join(" ");
+    console.log(result);
+};
+toUpperCase("i love java script");
