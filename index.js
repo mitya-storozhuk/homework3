@@ -69,3 +69,14 @@ function findMin() {
 };
 
 findMin(12, 14, 4, -4, 0.2);
+
+// task7 
+function lastElem (arr, num) {
+    if (num === undefined) return arr[arr.length - 1];
+    if (num < arr.length) return arr.slice(-num);
+    else return arr;
+};
+
+console.log(lastElem([3, 4, 10, -5]));
+console.log(lastElem([3, 4, 10, -5],2));
+console.log(lastElem([3, 4, 10, -5],8));
