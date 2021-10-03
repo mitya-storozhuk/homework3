@@ -39,3 +39,19 @@ function randArray(k) {
     return console.log(arr);
 };
 randArray(10);
+
+// task4
+function isInteger(num) {
+    return (num ^ 0) === num;
+};
+
+function raiseToDegree (a,b) {
+    let result = a ** b;
+    return console.log(result);
+};
+
+const a = +prompt("Введіть число, яке потрібно підняти в ступінь", "1");
+const b = +prompt("Введіть ступінь, у яку підняти число", "1");
+if ((isInteger(a) === false) || (isInteger(b) === false)) {
+    alert("Введіть цілі числа");
+} else raiseToDegree (a,b);
