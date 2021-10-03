@@ -52,6 +52,7 @@ function raiseToDegree (a,b) {
 
 const a = +prompt("Введіть число, яке потрібно підняти в ступінь", "1");
 const b = +prompt("Введіть ступінь, у яку підняти число", "1");
+
 if ((isInteger(a) === false) || (isInteger(b) === false)) {
     alert("Введіть цілі числа");
 } else raiseToDegree (a,b);
